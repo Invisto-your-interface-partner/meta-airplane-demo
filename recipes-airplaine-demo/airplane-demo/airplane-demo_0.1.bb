@@ -46,6 +46,10 @@ INSANE_SKIP:${PN} += "dev-so"
 
 FILES:${PN} += " \
   ${bindir}/DemoAirplaneCockpit \
-#${systemd_unitdir}/system/airplane-demo.service \
 "
+
+#FILES:${PN} += " \
+#  ${bindir}/DemoAirplaneCockpit \
+#${systemd_unitdir}/system/airplane-demo.service \
+#"
 

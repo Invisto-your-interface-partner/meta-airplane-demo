@@ -33,19 +33,19 @@ RDEPENDS:${PN} += "\
         qtsvg \
 "
 
-SYSTEMD_SERVICE_${PN} = "airplane-demo.service"
+#SYSTEMD_SERVICE_${PN} = "airplane-demo.service"
 
 FILES_SOLIBSDEV = ""
 INSANE_SKIP:${PN} += "dev-so"
 
-do_install:append() {
-        # Systemd
-        install -d ${D}${systemd_system_unitdir}
-        install -m 0644 ${WORKDIR}/airplane-demo.service ${D}${systemd_system_unitdir}
-}
+#do_install:append() {
+#        # Systemd
+#        install -d ${D}${systemd_system_unitdir}
+#        install -m 0644 ${WORKDIR}/airplane-demo.service ${D}${systemd_system_unitdir}
+#}
 
 FILES:${PN} += " \
   ${bindir}/DemoAirplaneCockpit \
-  ${systemd_unitdir}/system/airplane-demo.service \
+#${systemd_unitdir}/system/airplane-demo.service \
 "
 

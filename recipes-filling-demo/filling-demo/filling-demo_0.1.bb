@@ -38,14 +38,18 @@ SYSTEMD_SERVICE_${PN} = "filling-demo.service"
 FILES_SOLIBSDEV = ""
 INSANE_SKIP:${PN} += "dev-so"
 
-do_install:append() {
+#do_install:append() {
 #        # Systemd
 #        install -d ${D}${systemd_system_unitdir}
 #        install -m 0644 ${WORKDIR}/filling-demo.service ${D}${systemd_system_unitdir}
-}
+#}
 
 FILES:${PN} += " \
+  ${bindir}/DemoAirplaneCockpit \
+"
+
+#FILES:${PN} += " \
 #  ${bindir}/DemoFillingLine \
 #  ${systemd_unitdir}/system/filling-demo.service \
-"
+#"
 

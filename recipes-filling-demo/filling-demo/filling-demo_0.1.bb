@@ -39,13 +39,13 @@ FILES_SOLIBSDEV = ""
 INSANE_SKIP:${PN} += "dev-so"
 
 do_install:append() {
-        # Systemd
-        install -d ${D}${systemd_system_unitdir}
-        install -m 0644 ${WORKDIR}/filling-demo.service ${D}${systemd_system_unitdir}
+#        # Systemd
+#        install -d ${D}${systemd_system_unitdir}
+#        install -m 0644 ${WORKDIR}/filling-demo.service ${D}${systemd_system_unitdir}
 }
 
 FILES:${PN} += " \
-  ${bindir}/DemoFillingLine \
-  ${systemd_unitdir}/system/filling-demo.service \
+#  ${bindir}/DemoFillingLine \
+#  ${systemd_unitdir}/system/filling-demo.service \
 "
 

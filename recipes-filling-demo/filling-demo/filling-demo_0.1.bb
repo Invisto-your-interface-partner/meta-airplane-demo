@@ -23,7 +23,7 @@ SRC_URI = "git://git@github.com/Invisto-your-interface-partner/DemoFillingLine.g
         file://filling-demo.service \
 "
 
-SRCREV = "60d5d8a92dc6888181c2ec137cbb53c1085ce4bd"
+SRCREV = "35f3fff70296b438fbd1cbcbba010535e73a17fc"
 
 S = "${WORKDIR}/git"
 

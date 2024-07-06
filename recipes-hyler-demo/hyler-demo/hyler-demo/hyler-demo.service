@@ -1,0 +1,13 @@
+[Unit]
+Description=Demo Qt6 application
+
+[Service]
+Type=simple
+Environment="QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0"
+ExecStart=/usr/bin/demo-qt6-application
+StandardOutput=journal
+Restart=always
+
+[Install]
+WantedBy=basic.target
+

@@ -23,7 +23,7 @@ SRC_URI = "git://git@github.com/Invisto-your-interface-partner/DemoAirplaneCockp
         file://airplane-demo.service \
 "
 
-SRCREV = "113ef1f81e6693e3174855003ff40cb9a28447ad"
+SRCREV = "02a365dc0c4220e16d5f753bbe6358ba870eee55"
 
 S = "${WORKDIR}/git"
 

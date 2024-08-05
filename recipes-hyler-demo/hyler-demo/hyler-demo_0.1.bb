@@ -19,11 +19,11 @@ DEPENDS += "\
 
 PV = "1.0+git${SRCPV}"
 
-SRC_URI = "git://git@github.com/Invisto-your-interface-partner/Hyler-HMI.git;protocol=ssh;branch=main \
+SRC_URI = "git://git@github.com/Invisto-your-interface-partner/Hyler-HMI.git;protocol=ssh;branch=Sativa \
         file://hyler-demo.service \
 "
 
-SRCREV = "b28ab95de70d59e920a61cf3acc7f190d4bc662e"
+SRCREV = "97a998e395752b5a157f427755cff9c4274e62a0"
 
 S = "${WORKDIR}/git"
 
